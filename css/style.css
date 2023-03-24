@@ -18,7 +18,7 @@
 2.  Helper Css
 3.  Header Section
 4.  Hero Section
-5.  Services Section
+5.  awards Section
 6.  Track Section
 7.  Countdown Section
 8.  Team Section
@@ -499,31 +499,31 @@ ol {
 		bottom: -10px;
 	}
 }
-.about-services {
+.about-awards {
 	padding-bottom: 50px;
 }
 
-.about-services .section-title {
+.about-awards .section-title {
 	margin-bottom: 60px;
 }
 
-.about__services__item {
+.about__awards__item {
 	-webkit-transition: all, 0.3s;
 	-o-transition: all, 0.3s;
 	transition: all, 0.3s;
 }
 
-.about__services__item:hover {
+.about__awards__item:hover {
 	-webkit-box-shadow: 0px 3px 30px rgba(22, 41, 124, 0.1);
 	box-shadow: 0px 3px 30px rgba(22, 41, 124, 0.1);
 }
 
-.about__services__item__pic {
+.about__awards__item__pic {
 	height: 240px;
 	position: relative;
 }
 
-.about__services__item__pic .icon {
+.about__awards__item__pic .icon {
 	height: 50px;
 	width: 50px;
 	background: #5c00ce;
@@ -537,19 +537,19 @@ ol {
 	bottom: -25px;
 }
 
-.about__services__item__text {
+.about__awards__item__text {
 	text-align: center;
 	padding: 50px 10px 30px;
 }
 
-.about__services__item__text h4 {
+.about__awards__item__text h4 {
 	font-size: 26px;
 	color: #111111;
 	font-weight: 700;
 	margin-bottom: 12px;
 }
 
-.about__services__item__text p {
+.about__awards__item__text p {
 	margin-bottom: 0;
 }
 
