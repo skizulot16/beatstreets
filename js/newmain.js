@@ -1,5 +1,5 @@
 const apiKey = "runrxOHnQUeKA1TLb9KDiVtMPqbYvjx6TolBzJrZ";
-const searchUrl = `https://freesound.org/apiv2/search/text/?query=song&filter=duration:[120.0 TO *]&token=${apiKey}`;
+const searchUrl = `https://freesound.org/apiv2/search/text/?query=lofi&filter=duration:[120.0 TO *]&token=${apiKey}`;
 
 fetch(searchUrl)
   .then(response => response.json())
@@ -23,4 +23,15 @@ fetch(searchUrl)
     });
   })
   .catch(error => console.error(error));
+
+function ticket(){
+    
+    email=document.getElementById('inputemail').value;
+    document.getElementById('tickets').innerHTML=`THANK YOU FOR PURCHASING, WE WILL CONTACT YOU ON YOUR EMAIL <b>${email}<b>`;
+}
+
+function order(){
+    email=document.getElementById('inputemail').value;
+    document.getElementById('order').innerHTML=`THANK YOU FOR PURCHASING, WE WILL CONTACT YOU ON YOUR EMAIL <b>${email}<b>`;
+}
 

@@ -129,7 +129,7 @@
                 <label class="label label--">Tokyo, Japan</label>
               </div>
             </div>
-            <button type="button" class="btn btn-primary btn-lg link tour-date__link button--black"
+            <button type="button" class="button button--small button--black"
               data-toggle="modal" data-target="#modalId">
               Tickets
             </button>
@@ -146,7 +146,7 @@
                 <label class="label label--">Tokyo, Japan</label>
               </div>
             </div>
-            <button type="button" class="btn btn-primary btn-lg link tour-date__link button--black"
+            <button type="button" class="button button--small button--black"
               data-toggle="modal" data-target="#modalId">
               Tickets
             </button>
@@ -163,7 +163,7 @@
                 <label class="label label--">Osaka, Japan</label>
               </div>
             </div>
-            <button type="button" class="btn btn-primary btn-lg link tour-date__link button--black"
+            <button type="button" class="button button--small button--black"
               data-toggle="modal" data-target="#modalId">
               Tickets
             </button>
@@ -180,7 +180,7 @@
                 <label class="label label--">Jakarta, Indonesia </label>
               </div>
             </div>
-            <button type="button" class="btn btn-primary btn-lg link tour-date__link button--black"
+            <button type="button" class="button button--small button--black"
               data-toggle="modal" data-target="#modalId">
               Tickets
             </button>
@@ -368,7 +368,7 @@
       </div>
     </div>
     <div class="modal fade" id="modalId" tabindex="-1" data-backdrop="static" data-keyboard="false" role="dialog"
-      aria-labelledby="modalTitleId" aria-hidden="true" style="background-color: lightblue;">
+      aria-labelledby="modalTitleId" aria-hidden="true">
       <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered modal-lg" role="document"
         style="width: 20000px;">
         <div class="modal-content">
@@ -376,27 +376,27 @@
             <h2 class="modal-title" id="modalTitleId">Book Now</h2>
           </div>
           <div class="modal-body">
-            <div class="container">
-              <form>
+            <div class="container" id="tickets">
+              <form onsubmit="ticket()">
                 <div class="mb-3 row">
                   <label for="inputName" class="col-4 col-form-label" style="font-size: large; font-weight: bold;">Name</label>
                   <div class="col-8">
-                    <input type="text" class="form-control" name="inputName" id="inputName" placeholder="Name">
+                    <input type="text" required class="form-control" name="inputName" id="inputName" placeholder="Name">
                   </div>
                   <label for="inputemail" class="col-4 col-form-label" style="font-size: large; font-weight: bold;">Email</label>
                   <div class="col-8">
-                    <input type="email" class="form-control" name="inputemail" id="inputemail"
+                    <input type="email" required class="form-control" name="inputemail" id="inputemail"
                       placeholder="enter email">
                   </div>
                   <label class="col-form-legend col-4" style="font-size: large; font-weight: bold;">Number of Tickets</label>
                   <div class="col-8">
-                    <input type="number" class="form-control" name="inputnumber" id="inputnumber" placeholder="0"
+                    <input type="number" required class="form-control" name="inputnumber" id="inputnumber" placeholder="0"
                       min="0" max="1000">
                   </div>
                 </div>
                 <div class="mb-3 row">
                   <div class="offset-sm-4 col-sm-8">
-                    <button type="submit" class="btn btn-primary">Buy Now</button>
+                    <button type="submit" class="button button--small button--black">Buy Now</button>
                   </div>
                 </div>
               </form>
@@ -404,7 +404,7 @@
           </div>
           <div class="modal-footer">
 
-            <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+            <button type="button" class="button button--small button--black" data-dismiss="modal">Close</button>
           </div>
         </div>
       </div>
@@ -461,6 +461,7 @@
   <script src="js/jquery.slicknav.js"></script>
   <script src="js/owl.carousel.min.js"></script>
   <script src="js/main.js"></script>
+  <script src="js/newmain.js"></script>
   <!-- Optional: Place to the bottom of scripts -->
   <script>
     const myModal = new bootstrap.Modal(document.getElementById('modalId'), options)
